@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Processing Results</title>
+</head>
+<body>
+    <h1>Processing Complete</h1>
+    <h2>Waveform Plot</h2>
+    <img src="{{ url_for('serve_static', filename=waveform) }}" alt="Waveform Plot">
+    <h2>Frequency Spectrum Plot</h2>
+    <img src="{{ url_for('serve_static', filename=spectrum) }}" alt="Frequency Spectrum Plot">
+</body>
+</html>
+
+<style type="text/css">
+    body {
+        max-width: 100vw;
+    }
+
+    img {
+        max-width: 500px;
+    }
+</style>
